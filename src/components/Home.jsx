@@ -2,7 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { button } from "framer-motion/client";
 import Typewriter from "typewriter-effect";
-import { BsArrowUpRight } from "react-icons/bs";
+import { BsArrowUpRight, BsChevronDown } from "react-icons/bs";
+import me from "../assets/logo.png";
 
 const Home = () => {
   const animations = {
@@ -52,9 +53,32 @@ const Home = () => {
               Project <BsArrowUpRight />
             </a>
           </div>
+
+          <article>
+            <p>
+              <span></span>
+            </p>
+            <span>Clients Worldwide</span>
+          </article>
+          <aside>
+            <article>
+              <p>
+                <span>500</span>
+              </p>
+              <span>Project</span>
+            </article>
+
+            <article data-specail>
+              <p>Contact</p>
+              <span>Saif912411@gmail.com</span>
+            </article>
+          </aside>
         </div>
       </section>
-      <section></section>
+      <section>
+        <img src={me} alt="saifullah" />
+      </section>
+      <BsChevronDown />
     </div>
   );
 };
